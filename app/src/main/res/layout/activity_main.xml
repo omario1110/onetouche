@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/text"
+            android:text="@string/nom"/>
+        <EditText
+            style="@style/Edit"
+            android:id="@+id/nom"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/text"
+            android:text="@string/prenom"/>
+
+        <EditText
+            android:id="@+id/prenom"
+            style="@style/Edit"
+            tools:ignore="SpeakableTextPresentCheck" />
+    </LinearLayout>
+    <TextView
+        style="@style/text"
+        android:text="@string/sex"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/rg"
+        >
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/rd1"
+            android:text="@string/sh"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:id="@+id/rd2"
+            android:text="@string/sf"/>
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="401dp"
+        android:src="@drawable/infirmiere" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            style="@style/btn"
+            android:text="<<"/>
+        <Button
+            style="@style/btn"
+            android:text="<"/>
+        <Button
+            style="@style/btn"
+            android:text=">"/>
+        <Button
+            style="@style/btn"
+            android:text=">>"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

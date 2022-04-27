@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="nom">Nom :</string>
+    <string name="prenom">Prenom :</string>
+    <string name="sh">Homme</string>
+    <string name="sf">Femme</string>
+    <string name="sex">Sex</string>
+</resources>
